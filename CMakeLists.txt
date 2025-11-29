@@ -8,6 +8,7 @@ set(SERVER_SOURCES
         server/src/Task.cpp
         server/src/ThreadPool.cpp
         server/src/Queue.cpp
+        server/src/SearchResult.cpp
         server/src/Server.cpp
 )
 
@@ -15,6 +16,7 @@ set(SERVER_HEADERS
         server/include/Task.h
         server/include/ThreadPool.h
         server/include/Queue.h
+        server/include/SearchResult.h
         server/include/Server.h
 )
 
