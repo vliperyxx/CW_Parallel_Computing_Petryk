@@ -9,6 +9,7 @@ set(SERVER_SOURCES
         server/src/ThreadPool.cpp
         server/src/Queue.cpp
         server/src/SearchResult.cpp
+        server/src/FileManager.cpp
         server/src/Server.cpp
 )
 
@@ -17,6 +18,7 @@ set(SERVER_HEADERS
         server/include/ThreadPool.h
         server/include/Queue.h
         server/include/SearchResult.h
+        server/include/FileManager.h
         server/include/Server.h
 )
 
