@@ -37,3 +37,11 @@ add_executable(Client ${CLIENT_SOURCES} ${CLIENT_HEADERS})
 
 target_include_directories(Server PUBLIC server/include)
 target_include_directories(Client PUBLIC client/include)
+
+target_link_libraries(Server ws2_32)
+target_link_libraries(Client ws2_32)
+
+set(DATA_PATH "${CMAKE_SOURCE_DIR}/server/data")
+target_compile_definitions(Server PRIVATE DATA_DIR="${DATA_PATH}")
+
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static -static-libgcc -static-libstdc++")
