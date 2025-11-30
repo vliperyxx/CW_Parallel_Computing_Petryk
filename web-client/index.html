@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Service</title>
+
+    <link rel="icon" type="image/png" href="images/magnifying_glass.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="queue-banner" class="queue-banner"></div>
+
+<main class="main-content">
+
+    <div class="search-widget">
+        <form id="search-form">
+            <h2>Search Service</h2>
+
+            <label for="search-input">Enter text to search</label>
+
+            <input type="text" id="search-input" placeholder="">
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="illustration-container">
+        <img src="images/woman_with_magnifying_glass.png" alt="Illustration of a woman searching">
+    </div>
+
+</main>
+
+<section id="results-area">
+    <p id="results-placeholder">Search results will appear here.</p>
+</section>
+
+<section id="snippets-area">
+    <p id="snippets-placeholder">Snippets will appear here.</p>
+</section>
+
+<script type="module" src="./index.js"></script>
+</body>
+</html>
